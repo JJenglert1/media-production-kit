@@ -10,6 +10,10 @@ HyperFrames is a framework that lets AI agents build videos as code — HTML fil
 
 You don't need to know how to code. Just open the project in Claude Code and start talking to it.
 
+### See it in action
+
+A 10-second intro built with this kit: [demo/do-more-with-ai.mp4](demo/do-more-with-ai.mp4)
+
 ---
 
 ## Getting Started

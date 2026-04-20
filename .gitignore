@@ -24,3 +24,7 @@ revert-*.js
 
 Do More With Ai/
 Do More With Ai.zip
+
+# Demo video exception
+!demo/
+!demo/*.mp4
