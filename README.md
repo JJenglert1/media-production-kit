@@ -11,6 +11,7 @@ cd HyperFrames
 
 # 2. Install agent skills (one-time)
 npx skills add heygen-com/hyperframes --yes
+npx skills add SecondWindAI/creator-plugins --yes
 
 # 3. Open in Claude Code (or your preferred AI agent)
 claude .
@@ -40,6 +41,8 @@ npx hyperframes render
 
 Skills are installed automatically and work across Claude Code, Cursor, Codex, Gemini CLI, and more.
 
+### HyperFrames ([heygen-com/hyperframes](https://github.com/heygen-com/hyperframes))
+
 | Skill | Slash Command | Purpose |
 |-------|--------------|---------|
 | hyperframes | `/hyperframes` | Create and edit HTML compositions |
@@ -47,6 +50,20 @@ Skills are installed automatically and work across Claude Code, Cursor, Codex, G
 | hyperframes-registry | `/hyperframes-registry` | Add blocks from the registry |
 | website-to-hyperframes | `/website-to-hyperframes` | Convert a URL to a video |
 | gsap | `/gsap` | GSAP animation patterns |
+
+### Creator Plugins ([SecondWindAI/creator-plugins](https://github.com/SecondWindAI/creator-plugins))
+
+| Skill | Slash Command | Purpose |
+|-------|--------------|---------|
+| create-song | `/create-song` | Generate background music for your video |
+| create-sfx | `/create-sfx` | Generate sound effects |
+| create-soundscape | `/create-soundscape` | Generate ambient soundscapes |
+| create-thumbnail | `/create-thumbnail` | Generate video thumbnail images |
+| transform-image | `/transform-image` | Transform/style existing images |
+| fetch-brand-assets | `/fetch-brand-assets` | Pull brand assets for a URL |
+| create-title | `/create-title` | Generate video titles |
+| create-description | `/create-description` | Generate video descriptions |
+| create-hashtags | `/create-hashtags` | Generate hashtags |
 
 ## CLI Commands
 

@@ -1,6 +1,46 @@
 {
   "version": 1,
   "skills": {
+    "create-description": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "0916718bbaacd65a863a54307cc3848093dc2e249cab5f9e6bad532643098fdd"
+    },
+    "create-hashtags": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "b1dc98565860db455be1f6191fccb95d86e86185561d2e55dc74ee197312a4dc"
+    },
+    "create-sfx": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "503390b6577abef226b2474875652754247a2ff86ef87a7c7253a6e47ee02f4d"
+    },
+    "create-song": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "4a4ec71da0fd13391a22792233b562fe1b19b307caf773c8e0f8ee8908975f0f"
+    },
+    "create-soundscape": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "748131484a1af9c140b8243a470f40607fb6912754c49052c1c0020b692dd91b"
+    },
+    "create-thumbnail": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "6efe1b19c851702561bf9afa8a524bb9c192b9ed8d87b2e021ca72a9da6bf5e0"
+    },
+    "create-title": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "9aa59d6c7129d48c2b399da606bcd24c8ef23d2b002dc1ad3d6287b059d6af72"
+    },
+    "fetch-brand-assets": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "4e4d4458a7699de005a6838f46b5cfc4003994bf8bc3d2b36ad1ed38530d419b"
+    },
     "gsap": {
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
@@ -20,6 +60,11 @@
       "source": "heygen-com/hyperframes",
       "sourceType": "github",
       "computedHash": "141fcd863a1a02117706712508e8b0df407c3d0ff36e5863123fa4ce2defd14d"
+    },
+    "transform-image": {
+      "source": "SecondWindAI/creator-plugins",
+      "sourceType": "github",
+      "computedHash": "61ea6c7b00162a98ffd3cddf88e087e98ea877c0996c46fe70649ca0ed741e44"
     },
     "website-to-hyperframes": {
       "source": "heygen-com/hyperframes",

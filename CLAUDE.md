@@ -4,6 +4,8 @@
 
 **Always invoke the relevant skill before writing or modifying compositions.** Skills encode framework-specific patterns (e.g., `window.__timelines` registration, `data-*` attribute semantics, shader-compatible CSS rules) that are NOT in generic web docs. Skipping them produces broken compositions.
 
+### HyperFrames
+
 | Skill                      | Command                   | When to use                                                                                       |
 | -------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- |
 | **hyperframes**            | `/hyperframes`            | Creating or editing HTML compositions, captions, TTS, audio-reactive animation, marker highlights |
@@ -12,7 +14,26 @@
 | **website-to-hyperframes** | `/website-to-hyperframes` | Capturing a URL and turning it into a video — full website-to-video pipeline                      |
 | **gsap**                   | `/gsap`                   | GSAP animations for HyperFrames — tweens, timelines, easing, performance                          |
 
-> **Skills not installed?** Run `npx skills add heygen-com/hyperframes --yes` and restart your agent session.
+### Creator Plugins (Audio, Images, Copy)
+
+| Skill                    | Command                    | When to use                                              |
+| ------------------------ | -------------------------- | -------------------------------------------------------- |
+| **create-song**          | `/create-song`             | Generate background music for a video                    |
+| **create-sfx**           | `/create-sfx`              | Generate sound effects                                   |
+| **create-soundscape**    | `/create-soundscape`       | Generate ambient soundscapes                             |
+| **create-thumbnail**     | `/create-thumbnail`        | Generate a thumbnail image for the video                 |
+| **transform-image**      | `/transform-image`         | Transform or style an existing image                     |
+| **fetch-brand-assets**   | `/fetch-brand-assets`      | Pull brand colors, fonts, and logos from a URL           |
+| **create-title**         | `/create-title`            | Generate video titles                                    |
+| **create-description**   | `/create-description`      | Generate video descriptions                              |
+| **create-hashtags**      | `/create-hashtags`         | Generate hashtags                                        |
+
+> **Skills not installed?**
+> ```bash
+> npx skills add heygen-com/hyperframes --yes
+> npx skills add SecondWindAI/creator-plugins --yes
+> ```
+> Then restart your agent session.
 
 ## Commands
 
