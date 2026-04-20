@@ -1,82 +1,138 @@
-# HyperFrames Starter
+# HyperFrames Starter Kit
 
-A ready-to-use starter project for building AI-powered videos with [HyperFrames](https://hyperframes.heygen.com/introduction) — HTML/CSS/JS compositions that render to MP4.
+A ready-to-use AI video production environment. Open this folder in Claude Code (or any compatible AI agent), describe the video you want to make, and your agent will build, animate, and render it to MP4 — complete with music, sound effects, voiceover, and thumbnails.
 
-## Quick Start
+---
+
+## What This Repo Does
+
+HyperFrames is a framework that lets AI agents build videos as code — HTML files with animations and audio that render to `.mp4`. This starter kit comes pre-loaded with every skill your agent needs to go from idea to finished video.
+
+You don't need to know how to code. Just open the project in Claude Code and start talking to it.
+
+---
+
+## Getting Started
+
+### 1. Install Claude Code
+
+If you haven't already: [claude.ai/code](https://claude.ai/code)
+
+### 2. Clone this repo and open it
 
 ```bash
-# 1. Clone this repo
 git clone <repo-url>
 cd HyperFrames
-
-# 2. Install agent skills (one-time)
-npx skills add heygen-com/hyperframes --yes
-npx skills add SecondWindAI/creator-plugins --yes
-
-# 3. Open in Claude Code (or your preferred AI agent)
 claude .
-
-# 4. Try a starter prompt
-# "Using /hyperframes, create a 15-second intro about [your topic]"
-
-# 5. Preview in the browser
-npx hyperframes preview
-
-# 6. Render to MP4
-npx hyperframes render
 ```
 
-## What's Included
+### 3. Try your first prompt
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Root composition — your video's entry point |
-| `hyperframes.json` | Project config + registry settings |
-| `meta.json` | Project metadata |
-| `CLAUDE.md` | Agent instructions (read automatically by Claude Code) |
-| `AGENTS.md` | Agent instructions for other AI tools (Cursor, Codex, etc.) |
-| `.agents/skills/` | Installed HyperFrames skills for all major AI agents |
+```
+Using /hyperframes, create a 30-second product intro video for [your product]
+```
 
-## Available Skills
-
-Skills are installed automatically and work across Claude Code, Cursor, Codex, Gemini CLI, and more.
-
-### HyperFrames ([heygen-com/hyperframes](https://github.com/heygen-com/hyperframes))
-
-| Skill | Slash Command | Purpose |
-|-------|--------------|---------|
-| hyperframes | `/hyperframes` | Create and edit HTML compositions |
-| hyperframes-cli | `/hyperframes-cli` | CLI usage: lint, preview, render, TTS |
-| hyperframes-registry | `/hyperframes-registry` | Add blocks from the registry |
-| website-to-hyperframes | `/website-to-hyperframes` | Convert a URL to a video |
-| gsap | `/gsap` | GSAP animation patterns |
-
-### Creator Plugins ([SecondWindAI/creator-plugins](https://github.com/SecondWindAI/creator-plugins))
-
-| Skill | Slash Command | Purpose |
-|-------|--------------|---------|
-| create-song | `/create-song` | Generate background music for your video |
-| create-sfx | `/create-sfx` | Generate sound effects |
-| create-soundscape | `/create-soundscape` | Generate ambient soundscapes |
-| create-thumbnail | `/create-thumbnail` | Generate video thumbnail images |
-| transform-image | `/transform-image` | Transform/style existing images |
-| fetch-brand-assets | `/fetch-brand-assets` | Pull brand assets for a URL |
-| create-title | `/create-title` | Generate video titles |
-| create-description | `/create-description` | Generate video descriptions |
-| create-hashtags | `/create-hashtags` | Generate hashtags |
-
-## CLI Commands
+### 4. Preview and render
 
 ```bash
-npx hyperframes preview      # Open studio editor in browser
-npx hyperframes render       # Render to MP4
-npx hyperframes lint         # Validate all compositions
-npx hyperframes docs <topic> # Read local docs (no network needed)
+npx hyperframes preview    # opens a live preview in your browser
+npx hyperframes render     # renders the final MP4 file
 ```
+
+---
+
+## Slash Commands (Skills)
+
+Type any of these in Claude Code to activate that skill. Each one loads a set of instructions that tells your agent exactly how to do that task correctly.
+
+### Video Composition
+
+| Command | What it does |
+|---------|-------------|
+| `/hyperframes` | **Build a video.** Creates and edits animated HTML compositions — the core skill for making anything in this repo. Use this first for any video work. |
+| `/hyperframes-cli` | **Run CLI tools.** Guides your agent through commands like lint, preview, render, and text-to-speech generation. |
+| `/hyperframes-registry` | **Add pre-built blocks.** Installs ready-made components (lower thirds, titles, transitions, etc.) into your video from the HyperFrames block registry. |
+| `/website-to-hyperframes` | **Turn a website into a video.** Give it a URL and it runs a full 7-step pipeline: captures the site, writes a script, creates a storyboard, generates voiceover, builds compositions, and validates the result. |
+| `/gsap` | **Advanced animations.** Deep animation patterns using GSAP — tweens, timelines, easing, stagger effects, and performance optimization. |
+
+### Audio
+
+| Command | What it does |
+|---------|-------------|
+| `/create-song` | **Generate original music.** Describe a vibe, genre, or mood and your agent synthesizes a full stereo `.wav` file — complete song with sections, mastering, and all. |
+| `/create-sfx` | **Generate sound effects.** Describe a sound (UI click, whoosh, impact, etc.) and get a synthesized `.wav` file back. |
+| `/create-soundscape` | **Generate ambient audio.** Creates layered environmental soundscapes that evolve naturally over time — great for background atmosphere. |
+
+### Images & Visuals
+
+| Command | What it does |
+|---------|-------------|
+| `/create-thumbnail` | **Generate YouTube thumbnails.** Produces 4 distinct thumbnail variations using proven design archetypes, with A/B testing in mind. |
+| `/transform-image` | **Resize and convert images.** Crops, resizes, converts formats (PNG, JPG, WebP), and generates social media kits or favicon sets from a source image. |
+| `/fetch-brand-assets` | **Download brand assets.** Pulls official logos, icons, and brand assets from a company's press kit or trusted sources, saving them locally for use in your video. |
+
+### Copy & Distribution
+
+| Command | What it does |
+|---------|-------------|
+| `/create-title` | **Generate video titles.** Produces 4 title variations optimized for YouTube, Instagram, TikTok, LinkedIn, and Twitter/X — each using a different hook or formula. |
+| `/create-description` | **Generate video descriptions.** Creates 4 description variations per platform with proper SEO structure, hooks, timestamps, and calls-to-action. |
+| `/create-hashtags` | **Generate hashtags.** Builds platform-specific hashtag sets using a broad-to-niche pyramid strategy, with 4 variations (balanced, niche-heavy, trend-heavy, brand-focused). |
+
+---
+
+## Example Workflows
+
+**"I want to make a product demo video"**
+1. `/hyperframes` — build the composition and animations
+2. `/create-song` — generate background music
+3. `/create-thumbnail` — generate a thumbnail
+4. `/create-title` + `/create-description` + `/create-hashtags` — prep for publishing
+
+**"I want to turn our homepage into a video ad"**
+1. `/website-to-hyperframes` — give it your URL, it handles everything
+2. `/create-sfx` — add sound effects
+3. `/create-thumbnail` — generate a thumbnail
+
+**"I want to make a branded intro"**
+1. `/fetch-brand-assets` — pull your logo and brand colors
+2. `/hyperframes` — build the animated intro
+3. `/create-soundscape` — add ambient audio
+
+---
+
+## What's in This Repo
+
+```
+HyperFrames/
+├── index.html          ← your video composition (edit this to build your video)
+├── compositions/       ← sub-scenes and reusable components
+├── assets/             ← media files (images, audio, video clips)
+├── hyperframes.json    ← project configuration
+├── meta.json           ← project name and ID
+├── CLAUDE.md           ← instructions your AI agent reads automatically
+├── AGENTS.md           ← same instructions, for Cursor / Codex / other agents
+└── .agents/skills/     ← all 14 installed skills (works in any AI agent)
+```
+
+---
+
+## Re-installing Skills
+
+If you're setting this up fresh or skills go missing:
+
+```bash
+npx skills add heygen-com/hyperframes --yes
+npx skills add SecondWindAI/creator-plugins --yes
+```
+
+Then restart Claude Code.
+
+---
 
 ## Resources
 
-- [Full Documentation](https://hyperframes.heygen.com/introduction)
+- [HyperFrames Documentation](https://hyperframes.heygen.com/introduction)
 - [Prompting Guide](https://hyperframes.heygen.com/guides/prompting)
 - [Block Registry](https://hyperframes.heygen.com/registry)
-- [Machine-readable docs for AI tools](https://hyperframes.heygen.com/llms.txt)
+- [SecondWindAI Creator Plugins](https://github.com/SecondWindAI/creator-plugins)
