@@ -14,6 +14,12 @@
 | **website-to-hyperframes** | `/website-to-hyperframes` | Capturing a URL and turning it into a video — full website-to-video pipeline                      |
 | **gsap**                   | `/gsap`                   | GSAP animations for HyperFrames — tweens, timelines, easing, performance                          |
 
+### Claude Design Bridge (custom skill — this repo)
+
+| Skill                              | Command                              | When to use                                                              |
+| ---------------------------------- | ------------------------------------ | ------------------------------------------------------------------------ |
+| **claude-design-to-hyperframes**   | `/claude-design-to-hyperframes`      | Converting a Claude Design export (scenes.jsx + assets) into HyperFrames |
+
 ### Creator Plugins (Audio, Images, Copy)
 
 | Skill                    | Command                    | When to use                                              |

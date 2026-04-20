@@ -79,6 +79,12 @@ Type any of these in Claude Code to activate that skill. Each one loads a set of
 | `/create-description` | **Generate video descriptions.** Creates 4 description variations per platform with proper SEO structure, hooks, timestamps, and calls-to-action. |
 | `/create-hashtags` | **Generate hashtags.** Builds platform-specific hashtag sets using a broad-to-niche pyramid strategy, with 4 variations (balanced, niche-heavy, trend-heavy, brand-focused). |
 
+### Claude Design Bridge
+
+| Command | What it does |
+|---------|-------------|
+| `/claude-design-to-hyperframes` | **Convert a Claude Design export to HyperFrames.** Point it at a Claude Design export folder (the kind with `scenes.jsx` and an `assets/` folder) and it translates the React-based animation into a HyperFrames HTML composition ready to render as MP4. Handles the full mapping: Sprite clips → HyperFrames clips, `useTime`/`useSprite` hooks → GSAP timelines, easing functions, audio, background video, and pixel effects. |
+
 ---
 
 ## Example Workflows
@@ -98,6 +104,12 @@ Type any of these in Claude Code to activate that skill. Each one loads a set of
 1. `/fetch-brand-assets` — pull your logo and brand colors
 2. `/hyperframes` — build the animated intro
 3. `/create-soundscape` — add ambient audio
+
+**"I designed an animation in Claude and want to render it as an MP4"**
+1. Export your project from Claude Design (download the zip/folder)
+2. `/claude-design-to-hyperframes` — point it at the export folder, it rebuilds it in HyperFrames
+3. `/create-song` or `/create-sfx` — add or swap out the audio
+4. `npx hyperframes render` — export to MP4
 
 ---
 
