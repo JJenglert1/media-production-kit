@@ -1,5 +1,7 @@
 # HyperFrames Starter Kit
 
+[![Watch the video](https://img.youtube.com/vi/IDJ9M6LWeMw/maxresdefault.jpg)](https://youtu.be/IDJ9M6LWeMw?si=_R1UBeQLjJ0gQRjH)
+
 A ready-to-use AI video production environment. Open this folder in Claude Code (or any compatible AI agent), describe the video you want to make, and your agent will build, animate, and render it to MP4 — complete with music, sound effects, voiceover, and thumbnails.
 
 ---
